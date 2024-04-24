@@ -18,8 +18,6 @@ def pgm1():
     """
 
 
-
-
 def pgm2():
     print("Iterating a List and Pandas Series Will give the same Output")
     new_list = ["Idly","Dosa","Vadai","Chappati"]
