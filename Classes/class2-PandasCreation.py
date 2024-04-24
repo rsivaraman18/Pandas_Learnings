@@ -6,7 +6,7 @@ intro = """CREATION OF DATAFRAME
             4.Created From Pandas Series
 """
 
- 
+
 import pandas as pd
 
 def program0():
