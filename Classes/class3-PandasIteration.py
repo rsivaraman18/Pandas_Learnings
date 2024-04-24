@@ -10,7 +10,7 @@ def pgm1():
     print()
 
     """Output:            
-            Idly
+            Idly 
             Dosa
             Vadai
             Chappati
