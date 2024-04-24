@@ -1,7 +1,6 @@
 """ITERATION WITH PANDAS"""
 import pandas as pd
  
- 
 def pgm1():
     print("Iterating a List and Pandas Series Will give the same Output")
     new_list = ["Idly","Dosa","Vadai","Chappati"]
