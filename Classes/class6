@@ -1,0 +1,70 @@
+"""Pandas Methods"""
+import pandas as pd
+data = {
+            "vehicles":["Car","Bike","Lorry","Train","Cycle","JCB","Bus"],
+            "computer":["mouse","keyboard","Printer","CPU","Battery","Monitor","UPS"],
+            "biscuits":["good day","nabatti","Bounce","milk bikis","mari gold","Bourbourn","Hide & Seek"],
+            "cost" :[100,50,75,200,250,450,345]
+        }
+new_data = pd.DataFrame(data)
+print("new_data:-->",new_data)
+print('***************')
+
+"""
+            vehicles  computer     biscuits  cost
+        0      Car     mouse     good day   100
+        1     Bike  keyboard      nabatti    50
+        2    Lorry   Printer       Bounce    75
+        3    Train       CPU   milk bikis   200
+        4    Cycle   Battery    mari gold   250
+        5      JCB   Monitor    Bourbourn   450
+        6      Bus       UPS  Hide & Seek   345
+***************
+
+        Count: vehicles    7
+        computer    7
+        biscuits    7
+        cost        7
+        dtype: int64
+"""
+
+
+
+print()
+
+print('Count:',new_data.count())
+print('*******************')
+print()
+
+print('Sum:',new_data.sum())
+print('*******************')
+print()
+
+print('Mean:',new_data.mean())
+print('*******************')
+print()
+
+print('Median:',new_data.median())
+print('*******************')
+print()         
+
+print('Mode:',new_data.mode())
+print('*******************')
+print()       
+
+print('Standard:',new_data.std())
+print('*******************')
+print()  
+
+
+print('Minimum:',new_data.min())
+print('*******************')
+print()  
+
+print('Minimum:',new_data.max())
+print('*******************')
+print()  
+
+print('Minimum:',new_data.abs())
+print('*******************')
+print()  
