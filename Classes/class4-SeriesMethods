@@ -20,3 +20,14 @@ vehicles = {
             }
 new_dataset = pd.DataFrame(vehicles)
 print(new_dataset)
+
+
+"""
+                Car      Bike     Auto
+            0  10 kmph  5kmph  20 kmph
+            1  10 kmph  5kmph    5kmph
+            2  10 kmph  5kmph    5kmph
+            3  10 kmph  5kmph    5kmph
+            4  10 kmph  5kmph    5kmph
+
+"""
