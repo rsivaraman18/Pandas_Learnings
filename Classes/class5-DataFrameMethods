@@ -1,1 +1,97 @@
+import pandas as pd
+
+details = """
+        1.axes        -->
+        2.dtypes      -->
+        3.empty       -->
+        4.ndim
+        5.shape 
+        6.size        Numbeer of Elements
+        7.value
+        8.head
+        9.tail
+        10.Transpose  -->
+        note: ALL ARRAY MUST BE OF SAME LENGTH
+"""
+vehicles = {
+            "Car":['10 kmph','10 kmph','10 kmph','10 kmph','10 kmph'],
+            "Bike" : ["5kmph","5kmph","5kmph","5kmph","5kmph"],
+            "Auto" : ["20 kmph","5kmph","5kmph","5kmph","5kmph"]
+            }
+new_dataset = pd.DataFrame(vehicles)
+print(new_dataset)
+
+
+"""
+                Car      Bike     Auto
+            0  10 kmph  5kmph  20 kmph
+            1  10 kmph  5kmph    5kmph
+            2  10 kmph  5kmph    5kmph
+            3  10 kmph  5kmph    5kmph
+            4  10 kmph  5kmph    5kmph
+
+"""
+
+print('Axes -->:',new_dataset.axes)
+print('Dtypes  -->:',new_dataset.dtypes)
+print('Empty  -->:',new_dataset.empty)
+print('Dimension  -->:',new_dataset.ndim)
+print('Shape  -->:',new_dataset.shape)
+print('Size  -->:',new_dataset.size)
+print('Value  -->:',new_dataset.values)
+print('Head  -->:',new_dataset.head)
+print('Tail  -->:',new_dataset.tail)
+print('Head  -->:',new_dataset.head(2))
+print('Tail  -->:',new_dataset.tail(3))
+print('Transpose  -->:',new_dataset.T)
+
+
+
+"""
+      Car   Bike     Auto
+0  10 kmph  5kmph  20 kmph
+1  10 kmph  5kmph    5kmph
+2  10 kmph  5kmph    5kmph
+3  10 kmph  5kmph    5kmph
+4  10 kmph  5kmph    5kmph
+
+Axes -->: [RangeIndex(start=0, stop=5, step=1), Index(['Car', 'Bike', 'Auto'], dtype='object')]
+Dtypes  -->: Car     object
+    Bike    object
+    Auto    object
+    dtype: object
+Empty  -->: False
+Dimension  -->: 2
+Shape  -->: (5, 3)
+Size  -->: 15
+Value  -->: [['10 kmph' '5kmph' '20 kmph']
+            ['10 kmph' '5kmph' '5kmph']
+            ['10 kmph' '5kmph' '5kmph']
+            ['10 kmph' '5kmph' '5kmph']
+            ['10 kmph' '5kmph' '5kmph']]
+Head  -->: <bound method NDFrame.head of        Car   Bike     Auto
+            0  10 kmph  5kmph  20 kmph
+            1  10 kmph  5kmph    5kmph
+            2  10 kmph  5kmph    5kmph
+            3  10 kmph  5kmph    5kmph
+            4  10 kmph  5kmph    5kmph>
+Tail  -->: <bound method NDFrame.tail of        Car   Bike     Auto
+            0  10 kmph  5kmph  20 kmph
+            1  10 kmph  5kmph    5kmph
+            2  10 kmph  5kmph    5kmph
+            3  10 kmph  5kmph    5kmph
+            4  10 kmph  5kmph    5kmph>
+Head  -->:        Car   Bike     Auto
+            0  10 kmph  5kmph  20 kmph
+            1  10 kmph  5kmph    5kmph
+Tail  -->:        Car   Bike   Auto
+            2  10 kmph  5kmph  5kmph
+            3  10 kmph  5kmph  5kmph
+            4  10 kmph  5kmph  5kmph
+Transpose  -->:             0        1        2        3        4
+                    Car   10 kmph  10 kmph  10 kmph  10 kmph  10 kmph
+                    Bike    5kmph    5kmph    5kmph    5kmph    5kmph
+                    Auto  20 kmph    5kmph    5kmph    5kmph    5kmph
+
+"""
 
