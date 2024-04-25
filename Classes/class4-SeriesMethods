@@ -1,1 +1,22 @@
+import pandas as pd
 
+details = """
+        1.axes        -->
+        2.dtypes      -->
+        3.empty       -->
+        4.ndim
+        5.shape 
+        6.size        Numbeer of Elements
+        7.value
+        8.head
+        9.tail
+        10.Transpose  -->
+        note: ALL ARRAY MUST BE OF SAME LENGTH
+"""
+vehicles = {
+            "Car":['10 kmph','10 kmph','10 kmph','10 kmph','10 kmph'],
+            "Bike" : ["5kmph","5kmph","5kmph","5kmph","5kmph"],
+            "Auto" : ["20 kmph","5kmph","5kmph","5kmph","5kmph"]
+            }
+new_dataset = pd.DataFrame(vehicles)
+print(new_dataset)
