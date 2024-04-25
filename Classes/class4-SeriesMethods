@@ -31,3 +31,16 @@ print(new_dataset)
             4  10 kmph  5kmph    5kmph
 
 """
+
+print('Axes -->:',new_dataset.axes)
+print('Dtypes  -->:',new_dataset.dtypes)
+print('Empty  -->:',new_dataset.empty)
+print('Dimension  -->:',new_dataset.ndim)
+print('Shape  -->:',new_dataset.shape)
+print('Size  -->:',new_dataset.size)
+print('Value  -->:',new_dataset.values)
+print('Head  -->:',new_dataset.head)
+print('Tail  -->:',new_dataset.tail)
+print('Head  -->:',new_dataset.head(2))
+print('Tail  -->:',new_dataset.tail(3))
+print('Transpose  -->:',new_dataset.T)
