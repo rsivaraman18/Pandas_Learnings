@@ -32,7 +32,6 @@ def pgm2():
 #pgm2()
 
 
-
 def pgm3():
     import pandas as pd
 
