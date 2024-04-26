@@ -17,7 +17,7 @@ def prgm1():
                             2     4     8    12
                             3     5    10    15
     """
-
+ 
 #prgm1()
 
 def double_num(num):
