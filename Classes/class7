@@ -1,1 +1,121 @@
+"Using of Function in Pandas"
+import pandas as pd
+import numpy as np
+data = [ [2,4,6],[3,6,9],[4,8,12],[5,10,15]]
+ourdf = pd.DataFrame(data,columns="COL1 COL2 COL3".split())
 
+
+def prgm1():
+    print("Orginal DataFrame")
+    print("Our DataFrame:",ourdf)
+    print("*************")
+    print()
+    """
+        Our DataFrame:          COL1  COL2  COL3
+                            0     2     4     6
+                            1     3     6     9
+                            2     4     8    12
+                            3     5    10    15
+    """
+
+#prgm1()
+
+def double_num(num):
+    return 2*num
+
+
+def prgm2():
+    print("Double The Number")
+    data1 = ourdf.apply(double_num)
+    print("Our DataFrame:",data1)
+    print("*************")
+    print()
+    
+    """
+    Double The Number:          COL1  COL2  COL3
+                            0     4     8    12
+                            1     6    12    18
+                            2     8    16    24
+                            3    10    20    30
+    """
+
+#prgm2()
+
+
+
+
+def prgm3():
+    print("Sum of Number ")
+    data3 = ourdf.apply(sum,axis=1)  # Sum in Row wise
+    print("Our Output:",data3)
+    print("*************")
+    print()
+    
+    """
+    Sum Of NUmber1 :
+        Our Output: 0    12
+                    1    18
+                    2    24
+                    3    30
+                    dtype: int64   
+    """
+
+prgm3()
+
+
+
+
+
+def prgm4():
+    print("Sum of Number Using numpy")
+    data4 = ourdf.apply(np.sum,axis=1) 
+    print("Our DataFrame:",data4)
+    print("*************")
+    print()
+    
+    """
+    Sum Of NUmber :
+        Our DataFrame: 0    12
+                        1    18
+                        2    24
+                        3    30
+                        dtype: int64
+    """
+
+#prgm4()
+
+
+
+def prgm5():
+    print("Sum of Number Using numpy")
+    data5 = ourdf['COL2'].apply(double_num) 
+    print("Our Double Result:",data5)
+    print("*************")
+    print()
+    
+    """
+    Double Particularly Second Column :
+    Our Double Result:  0     8
+                        1    12
+                        2    16
+                        3    20
+                        Name: COL2, dtype: int64
+    """
+
+prgm5()
+
+def prgm7():
+    print("Access Second Row items")
+    data7 = ourdf.loc[2:2,:]
+    print('data7:',data7)
+    print('*********')
+    print()
+prgm7()
+
+def prgm8():
+    print("Access Second Row items")
+    data7 = ourdf.loc[2:2,:].apply(double_num)
+    print('data7:',data7)
+    print('*********')
+    print()
+prgm8()
