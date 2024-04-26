@@ -1,6 +1,6 @@
 title ='''You can create a DataFrame in Pandas by passing a /ndictionary of lists, a dictionary of arrays, or a list of dictionaries to the pd.DataFrame() constructor.'''
 print(title)
- 
+  
 def pgm1():
     import pandas as pd
 
