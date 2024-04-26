@@ -4,7 +4,7 @@ import numpy as np
 data = [ [2,4,6],[3,6,9],[4,8,12],[5,10,15]]
 ourdf = pd.DataFrame(data,columns="COL1 COL2 COL3".split())
 
- 
+  
 def prgm1():
     print("Orginal DataFrame")
     print("Our DataFrame:",ourdf)
