@@ -41,9 +41,6 @@ def prgm2():
 
 #prgm2()
 
-
-
-
 def prgm3():
     print("Sum of Number ")
     data3 = ourdf.apply(sum,axis=1)  # Sum in Row wise
