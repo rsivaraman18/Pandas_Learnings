@@ -1,6 +1,6 @@
 """Creation of Pandas Series"""
 import pandas as pd
-  
+   
 ### Program1: 
 def program1():
     number = [10,20,30,40,50]
