@@ -1,5 +1,5 @@
 import pandas as pd
- 
+ b
 details = """
         1.axes        -->
         2.dtypes      -->
