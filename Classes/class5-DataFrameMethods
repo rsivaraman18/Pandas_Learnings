@@ -46,7 +46,7 @@ print('Tail  -->:',new_dataset.tail(3))
 print('Transpose  -->:',new_dataset.T)
 
 
-
+ 
 """
       Car   Bike     Auto
 0  10 kmph  5kmph  20 kmph
