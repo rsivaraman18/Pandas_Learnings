@@ -12,7 +12,7 @@ details = """
         9.tail
         10.Transpose  -->
         note: ALL ARRAY MUST BE OF SAME LENGTH
-""" 
+"""  
 vehicles = {
             "Car":['10 kmph','10 kmph','10 kmph','10 kmph','10 kmph'],
             "Bike" : ["5kmph","5kmph","5kmph","5kmph","5kmph"],
